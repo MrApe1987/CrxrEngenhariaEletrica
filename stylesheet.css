@@ -1,0 +1,67 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Poppins", sans-serif
+}
+
+body {
+    font-size: 16px;
+}
+
+.w3-half img {
+    margin-bottom: -6px;
+    margin-top: 16px;
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.w3-half img:hover {
+    opacity: 1
+}
+
+.rede-social{
+    width: 250px;
+    padding: 30px;
+}
+
+.box-w3{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 24px;
+    padding: 48px;
+    color: white;
+    width: auto;
+    height: auto;
+    background-color: #000B2B;
+}
+.logo{
+    width: 250px;
+}
+strong {
+    color: #000B2B;
+}
+#cliente{
+    color: #042ba0;
+}
+.w3-jumbo{
+    color: #000B2B;
+   
+}
+#painel{
+    width: 250px;
+}
+.text{
+    color: #000B2B;
+}
+
+.w3-input{
+    outline: none;
+}
+.w3-color{
+    background-color: #000B2B;
+    color: white;
+}

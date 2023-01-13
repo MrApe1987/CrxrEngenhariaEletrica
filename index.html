@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <title>CRXR Engenharia Elétrica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Fechar o menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>CRXR<br>Engenharia Eletrica</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Serviços</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre nós</a>
+      <a href="#automacao" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automação</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>CRXR Engenharia Elétrica</span>
+  </header>
+
+  <!-- efeito da sidebar em telas pequenas -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="fechar menu de lado"
+    id="myOverlay"></div>
+
+  <!-- !Conteudo da pagina! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="services">
+      <h1 class="w3-jumbo"><b>Nossos serviços</b></h1>
+
+      <hr style="width:50px;border:5px solid #000B2B" class="w3-round">
+    </div>
+
+    <!-- Nossos serviços (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <h2>Serviços industriais</h2>
+        <a href="index-serviço.html" target="_blank"> <img
+            src="serviços/industrial.png"  onclick="onClick(this)" alt="Serviços industriais" id=painel>
+        </a>
+        <p>Realizamos diversos tipos de serviços industriais. </p>
+
+      </div>
+
+      <div class="w3-half">
+        <h2>Serviços prediais</h2>
+        <a href="index-serviço.html" target="_blank"> <img
+          src="serviços/condominium.jpg"  onclick="onClick(this)" alt="Serviços Prediais" id=painel>
+      </a>
+      <p>Realizamos serviços elétricos em condominium, prédios</p>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+ 
+
+    <!--texto sobre nós -->
+    <div class="w3-container" id="designers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge text"><b>Sobre nós </b></h1>
+      <hr style="width:50px;border:5px solid #000B2B" class="w3-round">
+      <p>Sempre buscando Qualidade e segurança!</p>
+      <p>Com a maior força de trabalho especializada, o melhor programa de segurança da categoria e execução de projeto
+        incomparável, a <strong>CRXR Engenharia Elétrica</strong> é capaz de atender às necessidades de qualquer projeto, em qualquer lugar, a qualquer hora.
+        Nossos valores não são apenas palavras em uma página.Nós os vivemos diariamente.Nossa missão é sempre, em
+        todos os sentidos, continuar melhorando.
+        Nos pautamos pelo padrão <strong>CRXR Engenharia Elétrica</strong>, que mobiliza todos os recursos para garantir a segurança de nossos serviços, mas
+        acima de tudo significa cumprir todos os requisitos daqueles que para <strong>CRXR Engenharia Elétrica</strong> são o patrimônio mais importante:
+        <strong id="cliente">CLIENTES</strong></p>
+
+    </div>
+
+    <!-- Sobre nós -->
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <div class="w3-container">
+            <h3>Carlos Ronaldo</h3>
+            <p class="w3-opacity">Engenheiro Eletricista</p>
+            <p>Bacharel em Engenharia Elétrica pela universidade CESCAGE de Ponta Grossa.</p>
+            <p>Carlos Ronaldo é um profissional da elétrica com mais de 20 anos de experiência na área. A cada dia
+              sempre buscando trabalhar com segurança</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-dark-blue">
+          <div class="w3-container">
+            <h3>Ronald Furtado</h3>
+            <p class="w3-opacity">Formando em Engenharia de software
+            <p>
+            <p>Atualmente atua como auxiliar técnico na empresa CRXR Engenharia Elétrica. É bem comunicativo e sempre
+              procura ajudar no que for possivel </p>
+            <p>Sempre visando a qualidade e segurança nos serviços realizados</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+
+      </div>
+    </div>
+
+    <!-- Packages / Pricing Tables -->
+    <div class="w3-container" id="automacao" style="margin-top:75px">
+      <h1 class="w3-xxxlarge text"><b>automação de caixas de água/Aluguel de painéis elétricos</b></h1>
+      <hr style="width:50px;border:5px solid #000B2B" class="w3-round">
+      </a>
+      <p>Automatizamos caixas de água, seja para condominium ou prediais. Também alugamos painéis elétricos</p>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="box-w3">Automação de caixas de água</li>
+          <li class="w3-padding-16">Aplicativo para IOS, Android</li>
+          <li class="w3-padding-16">Interface fácil de entender</li>
+          <li class="w3-padding-16">Suporte técnico 24horas</li>
+          <li class="w3-padding-16">Monitore nível da sua caixa d´água em qualquer, mesmo estando offline</li>
+          <li class="w3-padding-16">
+       
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://api.whatsapp.com/send?phone=554292004376" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">Fazer orçamento</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="box-w3">Aluguel de painéis elétricos</li>
+          <li class="w3-padding-16">Instalamos o painél no local</li>
+          <li class="w3-padding-16">Suporte técnico 24H</li>
+          <li class="w3-padding-16">Painéis de fácil uso</li>
+          <li class="w3-padding-16">20% de desconto no aluguel de um painél elétrico</li>
+          <li class="w3-padding-16">diversos tipos de painéis elétricos: industriais,prediais</li>
+
+         
+        
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://api.whatsapp.com/send?phone=554292004376" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">Fazer orçamento</button></a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- contato -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge text"><b>Entre em contato conosco</b></h1>
+      <hr style="width:50px;border:5px solid #000B2B" class="w3-round">
+      <p>Deseja entrar em contato conosco? Mande-nos uma mensagem!</p>
+      <form action="https://formspree.io/f/mlekekqz" target="_blank" method="POST">
+        <div class="w3-section">
+          <label>Nome</label>
+          <input class="w3-input w3-border" type="text" name="Name" required autocomplete="off">
+        </div>
+        <div class="w3-section">
+          <label>E-mail</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Mensagem</label>
+          <input class="w3-input w3-border" type="text" name="Message" required autocomplete="off">
+        </div>
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-color w3-margin-bottom">Enviar
+          mensagem</button>
+      </form>
+    </div>
+
+    <!-- fim do conteúdo da página-->
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+  <script>
+    // Script para abrir e fechar a sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+
+  </script>
+
+</body>
+
+</html>
